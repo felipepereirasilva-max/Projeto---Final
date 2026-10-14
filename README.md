@@ -1,129 +1,24 @@
-Clínica Fácil
-Sistema de gestão de uma clínica fictícia desenvolvido em Python com Tkinter, utilizando Programação Orientada a Objetos.
+# Clínica Fácil 
 
-Status: Beta
+Sistema de gerenciamento de clínicas desenvolvido para a disciplina de Programação Orientada a Objetos (POO).
 
-Classes
-Pessoa — classe base.
+## Sobre o projeto
 
-Paciente — herda de Pessoa.
+O Clínica Fácil tem como objetivo facilitar a organização de clínicas, permitindo o gerenciamento de pacientes, médicos, recepcionistas, especialidades, consultas e atendimentos.
 
-Medico — herda de Pessoa e pode ter várias especialidades.
+## Funcionalidades
 
-Recepcionista — herda de Pessoa.
+- Cadastro de pacientes, médicos e recepcionistas.
+- Cadastro de clínicas e especialidades.
+- Agendamento e consulta de consultas médicas.
+- Registro de atendimentos, diagnósticos e prescrições.
 
-Especialidade — representa uma especialidade médica.
+## Integrantes
 
-Consulta — relaciona paciente, médico, data e status.
+- Felipe Silva
+- Vitor Gabriel
 
-Atendimento — registra o atendimento de uma consulta.
+## Informações acadêmicas
 
-Clinica — responsável por gerenciar os dados do sistema.
-
-Relacionamentos
-classDiagram
-    Pessoa <|-- Paciente
-    Pessoa <|-- Medico
-    Pessoa <|-- Recepcionista
-
-    Medico "1" --> "1..*" Especialidade
-    Paciente "1" --> "0..*" Consulta
-    Medico "1" --> "0..*" Consulta
-    Consulta "1" --> "0..1" Atendimento
-    Clinica --> Pessoa
-    Clinica --> Paciente
-    Clinica --> Medico
-    Clinica --> Recepcionista
-    Clinica --> Especialidade
-    Clinica --> Consulta
-    Clinica --> Atendimento
-
-    class Pessoa {
-        +nome
-        -cpf
-    }
-
-    class Paciente {
-        +telefone
-    }
-
-    class Medico {
-        +crm
-    }
-
-    class Recepcionista {
-        +matricula
-    }
-
-    class Especialidade {
-        +nome
-    }
-
-    class Consulta {
-        +data
-        +status
-    }
-
-    class Atendimento {
-        +descricao
-    }
-
-    class Clinica {
-        +pacientes
-        +medicos
-        +consultas
-        +atendimentos
-    }
-Paciente, Medico e Recepcionista herdam de Pessoa.
-
-Um Medico pode ter várias Especialidade.
-
-Um Paciente pode ter várias Consulta.
-
-Um Medico pode ter várias Consulta.
-
-Uma Consulta possui um paciente e um médico.
-
-Uma Consulta pode gerar um Atendimento.
-
-A Clinica mantém os dados das outras classes.
-
-Conceitos de POO
-Classes e objetos
-
-Herança
-
-Encapsulamento
-
-Polimorfismo
-
-Abstração
-
-Associação
-
-Composição
-
-@property
-
-Exceções personalizadas
-
-Regras
-O paciente não pode ter duas consultas no mesmo horário.
-
-O médico não pode ter duas consultas no mesmo horário.
-
-Toda consulta possui paciente, médico e status.
-
-Consulta cancelada não pode gerar atendimento.
-
-Um médico pode ter mais de uma especialidade.
-
-Tecnologias
-Python
-
-Tkinter
-
-Programação Orientada a Objetos
-
-Execução
-python clinica_facil.py
+- **Matéria:** Programação Orientada a Objetos (POO)
+- **Professora:** Priscila

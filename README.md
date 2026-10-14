@@ -38,3 +38,6 @@ O sistema Clínica Fácil tem como objetivo organizar as informações e facilit
 - **Atendimentos:** registrar informações como data, diagnóstico, prescrições e observações.
 
 Essas funcionalidades ajudam a manter os dados organizados e facilitam o acompanhamento das consultas e dos atendimentos.
+
+link do figma: 
+https://www.figma.com/design/I0m7yp6PGdQEviqOF6LHhu/projeto-final---vers%25C3%25A3o-1?node-id=0-1&p=f&t=vJN04jfdYVbi8kBx-0
